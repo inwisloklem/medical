@@ -1,0 +1,34 @@
+.about
+  overflow: auto
+  background-color: $catalina-blue
+  color: $white
+
+  &__text
+    margin-top: 30px
+    margin-bottom: 30px
+    color: $white
+    // text-align: center
+    font(18px, 24px, 400, uppercase)
+
+  &__list
+    list-style-type: none
+
+  &__item
+    position: relative
+    margin-bottom: 30px
+    padding-left: 55px
+    opacity: 0.9
+
+    &::before
+      position: absolute
+      top: 50%
+      left: 0
+      display: block
+      width: 43px
+      height: 43px
+      border-radius: 50%
+      background-color: $catalina-blue
+      background-image: url("../img/list-point.png")
+      content: ""
+
+      transform: translateY(-50%)

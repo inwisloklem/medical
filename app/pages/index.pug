@@ -4,6 +4,8 @@ html(lang = "ru")
   include parts/head.pug
 
   body
+    include parts/svg-sprite.pug
+
     header.page-header
       h1.visually-hidden Медицинский центр омоложения лица
 
@@ -94,45 +96,50 @@ html(lang = "ru")
               p.features__desc Возвращает коже упругость и молодость
 
       section.about
-        h2.visually-hidden Информация об аппаратной методике
+        .container
+          h2.visually-hidden Информация об аппаратной методике
 
-        p.about__text Будьте уверены в своей красоте в любом возрасте. С новой методикой омоложения лица это стало реальностью!
+          p.about__text
+            | Будьте уверены в своей красоте в любом возрасте
+          p.about__text
+            | С новой методикой омоложения лица это стало реальностью!
 
-        ul.about__list
-          li.about__item Наша аппаратная методика прошла сертификацию качества в лабораториях Европы и США. Она полностью безопасна
-          li.about__item После прохождения процедуры следует стойкий и длительный эффект омоложения, который заметен уже после первого сеанса
-          li.about__item Процедура полностью безболезнена, кожный покров не нарушается, поэтому пациент не испытывает боли ни во время сеанса, ни после него
+          ul.about__list
+            li.about__item Наша аппаратная методика прошла сертификацию качества в лабораториях Европы и США. Она полностью безопасна
+            li.about__item После прохождения процедуры следует стойкий и длительный эффект омоложения, который заметен уже после первого сеанса
+            li.about__item Процедура полностью безболезнена, кожный покров не нарушается, поэтому пациент не испытывает боли ни во время сеанса, ни после него
 
       section.review
-        h2.review__title Отзывы наших клиентов
+        .container
+          h2.review__title Отзывы наших клиентов
 
-        ul.review__list
-          li.review__item
-            .review__text
-              | Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-              | Nullam quis risus eget urna mollis ornare vel eu leo.
-              | Donec ullamcorper nulla
-            .review__wrapper
-              .review__name Наталья Воронина
-              .review__city Москва
+          ul.review__list
+            li.review__item
+              .review__text
+                | Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                | Nullam quis risus eget urna mollis ornare vel eu leo.
+                | Donec ullamcorper nulla
+              .review__wrapper
+                .review__name Наталья Воронина
+                .review__city Москва
 
-          li.review__item
-            .review__text
-              | Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-              | Nullam quis risus eget urna mollis ornare vel eu leo.
-              | Donec ullamcorper nulla
-            .review__wrapper
-              .review__name Наталья Воронина
-              .review__city Москва
+            li.review__item
+              .review__text
+                | Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                | Nullam quis risus eget urna mollis ornare vel eu leo.
+                | Donec ullamcorper nulla
+              .review__wrapper
+                .review__name Наталья Воронина
+                .review__city Москва
 
-          li.review__item
-            .review__text
-              | Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-              | Nullam quis risus eget urna mollis ornare vel eu leo.
-              | Donec ullamcorper nulla
-            .review__wrapper
-              .review__name Наталья Воронина
-              .review__city Москва
+            li.review__item
+              .review__text
+                | Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                | Nullam quis risus eget urna mollis ornare vel eu leo.
+                | Donec ullamcorper nulla
+              .review__wrapper
+                .review__name Наталья Воронина
+                .review__city Москва
 
       section.results
         h2.results__title Результаты
