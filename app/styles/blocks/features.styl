@@ -1,0 +1,62 @@
+.features
+  overflow: auto
+  background-image: linear-gradient(to top, $linen 0, $dawn-pink 100%)
+
+  &__accent
+    color: $carmine
+    font-weight: 600
+
+  &__text
+    margin-top: 30px
+    margin-bottom: 30px
+    color: $mine-shaft
+    text-align: center
+    font(18px, 24px, 400, uppercase)
+
+  &__list
+    display: flex
+    flex-direction: column
+    align-items: center
+    list-style-type: none
+    font(16px, 24px, 400)
+
+  &__item
+    margin-bottom: 30px
+
+  &__picture
+    position: relative
+    margin: auto
+    margin-bottom: 15px
+    width: 192px
+    height: 192px
+
+    &::after
+      position: absolute
+      bottom: 0
+      left: 0
+      display: block
+      width: 50px
+      height: 50px
+      border-radius: 50%
+      background-color: $bleached-cedar
+      color: $white
+      text-align: center
+      font(24px, 50px, 400)
+
+    &--num-1
+      background-image: url("../img/features-picture-1.png")
+
+      &::after
+        content: "1."
+
+    &--num-2
+      background-image: url("../img/features-picture-2.png")
+
+      &::after
+        content: "2."
+
+    &--num-3
+      background-image: url("../img/features-picture-3.png")
+
+      &::after
+        content: "3."

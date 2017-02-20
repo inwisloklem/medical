@@ -1,0 +1,217 @@
+doctype html
+
+html(lang = "ru")
+  include parts/head.pug
+
+  body
+    header.page-header
+      h1.visually-hidden Медицинский центр омоложения лица
+
+      .page-header__hgroup
+        h2.page-header__title
+          | #[span.page-header__visit Посетите наш медицинский центр в Москве и]
+          | попробуйте новую аппаратную методику омоложения лица
+        h2.page-header__note Бесплатно!
+
+      .page-header__inner
+        .regform
+          form.regform__form(action = "#", method = "post")
+            h3.regform__title Акция для женщин #[span.regform__city Москвы]!
+
+            input.regform__name(type = "text", placeholder = "Введите ваше имя")
+            input.regform__tel(type = "tel", placeholder = "Введите номер телефона")
+
+            button.btn(type = "submit") Записаться
+
+        .page-header__wrapper
+          .timer
+            h3.timer__title До окончания акции:
+
+            .timer__block
+              .timer__wrapper
+                .timer__cell 0
+                .timer__cell 5
+              .timer__text Дней
+
+            .timer__block
+              .timer__wrapper
+                .timer__cell 1
+                .timer__cell 2
+              .timer__text Часов
+
+            .timer__block
+              .timer__wrapper
+                .timer__cell 1
+                .timer__cell 5
+              .timer__text Минут
+
+            .timer__block
+              .timer__wrapper
+                .timer__cell 4
+                .timer__cell 5
+              .timer__text Секунд
+
+          h3.page-header__motto
+            | Успейте записаться!
+            br
+            | Срок проведения акции ограничен!
+
+    main
+      section.problems
+        .container
+          h2.visually-hidden Проблемы, которые исправляет аппаратная методика
+
+          p.problems__text Если у вас
+
+          ul.problems__list
+            li.problems__item явные признаки старения кожи,
+            li.problems__item заметные морщины в области глаз и губ,
+            li.problems__item угревая сыпь,
+            li.problems__item возрастные пигментные пятна,
+            li.problems__item заметная потеря эластичности и упругости кожи,
+            li.problems__item потеря четкости контура овала лица,
+            li.problems__item опущение бровей, нависание и излишки кожи верхних век,
+
+          p.problems__text то вам необходимо обратиться к нам в центр и пройти аппаратную процедуру омоложения лица
+
+      section.features
+        .container
+          h2.visually-hidden Что делает аппаратная методика
+
+          p.features__text В эффективности аппаратной методики омоложения лица уже убедились #[span.features__accent более 10000 женщин] по всей России!
+
+          ul.features__list
+            li.features__item
+              .features__picture.features__picture--num-1
+              p.features__desc Разглаживает все виды морщин
+
+            li.features__item
+              .features__picture.features__picture--num-2
+              p.features__desc Снимает отёки под глазами
+
+            li.features__item
+              .features__picture.features__picture--num-3
+              p.features__desc Возвращает коже упругость и молодость
+
+      section.about
+        h2.visually-hidden Информация об аппаратной методике
+
+        p.about__text Будьте уверены в своей красоте в любом возрасте. С новой методикой омоложения лица это стало реальностью!
+
+        ul.about__list
+          li.about__item Наша аппаратная методика прошла сертификацию качества в лабораториях Европы и США. Она полностью безопасна
+          li.about__item После прохождения процедуры следует стойкий и длительный эффект омоложения, который заметен уже после первого сеанса
+          li.about__item Процедура полностью безболезнена, кожный покров не нарушается, поэтому пациент не испытывает боли ни во время сеанса, ни после него
+
+      section.review
+        h2.review__title Отзывы наших клиентов
+
+        ul.review__list
+          li.review__item
+            .review__text
+              | Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+              | Nullam quis risus eget urna mollis ornare vel eu leo.
+              | Donec ullamcorper nulla
+            .review__wrapper
+              .review__name Наталья Воронина
+              .review__city Москва
+
+          li.review__item
+            .review__text
+              | Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+              | Nullam quis risus eget urna mollis ornare vel eu leo.
+              | Donec ullamcorper nulla
+            .review__wrapper
+              .review__name Наталья Воронина
+              .review__city Москва
+
+          li.review__item
+            .review__text
+              | Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+              | Nullam quis risus eget urna mollis ornare vel eu leo.
+              | Donec ullamcorper nulla
+            .review__wrapper
+              .review__name Наталья Воронина
+              .review__city Москва
+
+      section.results
+        h2.results__title Результаты
+
+        ul.results__list
+          li.results__item
+            figure.results__before
+              img.results__img(src = "http://placehold.it/125x85", width = "125", height = "85", alt = "До")
+            figure.results__after
+              img.results__img(src = "http://placehold.it/125x85", width = "125", height = "85", alt = "После")
+
+          li.results__item
+            figure.results__before
+              img.results__img(src = "http://placehold.it/125x85", width = "125", height = "85", alt = "До")
+            figure.results__after
+              img.results__img(src = "http://placehold.it/125x85", width = "125", height = "85", alt = "После")
+
+          li.results__item
+            figure.results__before
+              img.results__img(src = "http://placehold.it/125x85", width = "125", height = "85", alt = "До")
+            figure.results__after
+              img.results__img(src = "http://placehold.it/125x85", width = "125", height = "85", alt = "После")
+
+          li.results__item
+            figure.results__before
+              img.results__img(src = "http://placehold.it/125x85", width = "125", height = "85", alt = "До")
+            figure.results__after
+              img.results__img(src = "http://placehold.it/125x85", width = "125", height = "85", alt = "После")
+
+          li.results__item
+            figure.results__before
+              img.results__img(src = "http://placehold.it/125x85", width = "125", height = "85", alt = "До")
+            figure.results__after
+              img.results__img(src = "http://placehold.it/125x85", width = "125", height = "85", alt = "После")
+
+          li.results__item
+            figure.results__before
+              img.results__img(src = "http://placehold.it/125x85", width = "125", height = "85", alt = "До")
+            figure.results__after
+              img.results__img(src = "http://placehold.it/125x85", width = "125", height = "85", alt = "После")
+
+      section.forbidden
+        h2.forbidden__title Противопоказания
+
+        ul.forbidden__list
+          li.forbidden__item Беременность
+          li.forbidden__item Лактация
+          li.forbidden__item Открытые раны или поражения кожи
+          li.forbidden__item Металлические и электрические шунты/имплантаты/устройства, расположенные в области лица и шеи (зубные имплантаты не являются противопоказанием)
+          li.forbidden__item Активная бактериальная, вирусная или грибковая инфекция в местах проведения процедуры
+          li.forbidden__item Эпилепсия
+          li.forbidden__item Онкологические заболевания
+
+    footer.page-footer
+      h2.page-footer__text Не упустите свой шанс записаться по акции
+
+      .timer
+        h3.timer__title До окончания акции:
+
+        .timer__block
+          .timer__wrapper
+            span.timer__cell 1
+            span.timer__cell 0
+          .timer__text Дней
+
+        .timer__block
+          .timer__wrapper
+            span.timer__cell 1
+            span.timer__cell 2
+          .timer__text Часов
+
+        .timer__block
+          .timer__wrapper
+            span.timer__cell 1
+            span.timer__cell 5
+          .timer__text Минут
+
+        .timer__block
+          .timer__wrapper
+            span.timer__cell 4
+            span.timer__cell 5
+          .timer__text Секунд

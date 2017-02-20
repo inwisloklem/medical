@@ -1,0 +1,42 @@
+.problems
+  overflow: auto
+  background-image: linear-gradient(to bottom, $azalea 0, $eunry 100%)
+
+  &__text
+    margin-top: 30px
+    margin-bottom: 30px
+    // margin-top: 50px
+    // margin-bottom: 50px
+    color: $mine-shaft
+    font(18px, 24px, 400, uppercase)
+    // font(30px, 36px, 400, uppercase)
+
+  &__list
+    color: $mine-shaft
+    list-style-type: none
+    font(16px, 24px)
+    // font(27px, 36px, 400)
+
+  &__item
+    position: relative
+    margin-bottom: 30px
+    padding-left: 50px
+
+    &::before
+      position: absolute
+      top: 50%
+      left: 15px
+      display: block
+      width: 14px
+      height: 14px
+      border-radius: 50%
+      background-color: $malibu
+      content: ""
+
+      transform: translateY(-50%)
+
+    &:nth-of-type(2n)
+      padding-left: 100px
+
+      &::before
+        left: 65px
