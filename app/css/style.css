@@ -685,6 +685,9 @@ ul {
   font-size: 14px;
   line-height: 20px;
 }
+.results__before {
+  border-right: 4px solid transparent;
+}
 .results__before::after {
   width: 30px;
   content: "до";
@@ -693,6 +696,9 @@ ul {
   .results__before {
     margin-right: 2%;
   }
+}
+.results__after {
+  border-left: 4px solid transparent;
 }
 .results__after::after {
   width: 55px;
@@ -790,6 +796,10 @@ ul {
   color: #363636;
   font-size: 16px;
   line-height: 24px;
+}
+.timer {
+  min-width: 280px;
+  text-align: center;
 }
 .timer--malibu {
   padding: 10px;
