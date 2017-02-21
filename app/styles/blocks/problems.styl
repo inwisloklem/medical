@@ -1,25 +1,39 @@
 .problems
   overflow: auto
-  background-image: linear-gradient(to bottom, $azalea 0, $eunry 100%)
+  background-image: linear-gradient(to bottom, $azalea 0, $azalea 20%, $eunry 100%)
+
+  &__wrapper
+    @media $tablet-desktop
+      margin: auto
+      max-width: 800px
 
   &__text
     margin-top: 30px
     margin-bottom: 30px
-    // margin-top: 50px
-    // margin-bottom: 50px
     color: $mine-shaft
-    font(18px, 24px, 400, uppercase)
-    // font(30px, 36px, 400, uppercase)
+    font(18px, 24px, 600, uppercase)
+
+    @media $tablet
+      font(22px)
+
+    @media $desktop
+      font(26px, 36px)
 
   &__list
     color: $mine-shaft
     list-style-type: none
     font(16px, 24px)
-    // font(27px, 36px, 400)
+
+    @media $tablet
+      font(18px)
+
+    @media $desktop
+      padding-left: 50px
+      font(24px, 36px)
 
   &__item
     position: relative
-    margin-bottom: 30px
+    margin-bottom: 15px
     padding-left: 50px
 
     &::before
@@ -35,8 +49,9 @@
 
       transform: translateY(-50%)
 
-    &:nth-of-type(2n)
-      padding-left: 100px
+    @media $tablet-desktop
+      &:nth-of-type(2n)
+        padding-left: 100px
 
-      &::before
-        left: 65px
+        &::before
+          left: 65px

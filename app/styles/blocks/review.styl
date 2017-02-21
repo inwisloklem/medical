@@ -4,20 +4,43 @@
     margin-bottom: 30px
     color: $mine-shaft
     text-align: center
-    font(18px, 24px, 400, uppercase)
+    font(18px, 24px, 600, uppercase)
+
+    @media $tablet
+      font(22px, 32px)
+
+    @media $desktop
+      font(26px, 36px)
+
+  &__ph
+    margin-bottom: 20px
 
   &__list
     display: flex
     flex-direction: column
     list-style-type: none
 
+    @media $tablet
+      font(18px, 22px, 400)
+
+    @media $desktop
+      flex-direction: row
+      justify-content: space-between
+      padding: 0 150px
+      font(20px, 25px, 400)
+
+  &__item
+    @media $desktop
+      flex-basis: 32.5%
+
   &__text
     position: relative
-    margin-bottom: 30px
+    margin-bottom: 75px
     padding: 30px
     border-radius: 5px
     background-image: linear-gradient(to top, $we-peep, $forget-me-not)
-    box-shadow: 0 2px 2px 0 rgba($black, 0.25)
+    box-shadow: 0 3px 3px 0 rgba($black, 0.25)
+    color: $mine-shaft
 
   &__triangle
     position: absolute
@@ -25,6 +48,29 @@
     left: 50px
     width: 50px
     height: 50px
+    fill: $we-peep
+    -webkit-filter: drop-shadow(2px 2px 1px rgba($black, 0.25))
+    filter: drop-shadow(2px 2px 1px rgba($black, 0.25))
 
   &__wrapper
+    position: relative
     margin-bottom: 30px
+    padding-left: 85px
+
+    &::before
+      position: absolute
+      top: 50%
+      left: 0
+      display: block
+      width: 75px
+      height: 75px
+      border-radius: 50%
+      background-color: $catalina-blue
+      content: ""
+
+      transform: translateY(-50%)
+
+  &__name
+  &__city
+    color: $mine-shaft
+    font(16px, 24px)

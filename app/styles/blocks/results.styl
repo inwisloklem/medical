@@ -1,0 +1,70 @@
+.results
+  &__list
+    display: flex
+    flex-direction: column
+    align-items: center
+    list-style-type: none
+
+    @media $tablet-desktop
+      flex-direction: row
+      flex-wrap: wrap
+
+  &__title
+    margin-top: 30px
+    margin-bottom: 30px
+    color: $mine-shaft
+    text-align: center
+    font(18px, 24px, 600, uppercase)
+
+    @media $tablet
+      font(22px, 32px)
+
+    @media $desktop
+      font(26px, 36px)
+
+  &__item
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: flex-end
+    margin-bottom: 50px
+    width: 100%
+
+    @media $tablet-desktop
+      justify-content: center
+      margin-bottom: 20px
+
+    @media $tablet
+      flex-basis: 50%
+
+    @media $desktop
+      flex-basis: 33%
+
+  &__before
+  &__after
+    position: relative
+
+    &::after
+      position: absolute
+      bottom: -15px
+      left: 0
+      display: block
+      height: 20px
+      background-color: $mine-shaft
+      color: $white
+
+      text-align: center
+      font(14px, 20px)
+
+  &__before
+    &::after
+      width: 30px
+      content: "до"
+
+    @media $tablet-desktop
+      margin-right: 2%
+
+  &__after
+    &::after
+      width: 55px
+      content: "после"

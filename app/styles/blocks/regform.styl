@@ -1,9 +1,13 @@
 .regform
-  width: 320px
-  height: 320px
+  width: 385px
+  height: 385px
   border-top: 1px solid transparent
   border-radius: 50%
   background-color: $vanilla-ice
+
+  &--shadow
+    @media $tablet-desktop
+      box-shadow: 0 10px 10px 0 rgba($black, 0.15)
 
   &__form
     display: flex
@@ -13,7 +17,7 @@
 
   &__title
     margin: auto
-    margin-top: 25px
+    margin-top: 60px
     margin-bottom: 20px
     width: 255px
     color: $paprika

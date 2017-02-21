@@ -2,16 +2,28 @@
   overflow: auto
   background-image: linear-gradient(to top, $linen 0, $dawn-pink 100%)
 
+  @media $desktop
+    background-image: url("../img/background-splash-1.png"), linear-gradient(to top, $linen 0, $dawn-pink 100%)
+    background-size: cover
+    background-repeat: no-repeat
+
   &__accent
     color: $carmine
-    font-weight: 600
 
   &__text
     margin-top: 30px
     margin-bottom: 30px
     color: $mine-shaft
-    // text-align: center
-    font(18px, 24px, 400, uppercase)
+    text-align: center
+    font(18px, 24px, 600, uppercase)
+
+    @media $tablet
+      font(22px)
+
+    @media $desktop
+      margin: 50px auto
+      max-width: 1100px
+      font(26px, 36px)
 
   &__desc
     text-align: center
@@ -20,11 +32,24 @@
     display: flex
     flex-direction: column
     align-items: center
+    margin-bottom: 15px
     list-style-type: none
     font(16px, 24px, 400)
 
+    @media $tablet
+      font(18px)
+
+    @media $desktop
+      flex-direction: row
+      justify-content: space-around
+      margin-bottom: 50px
+      font(22px, 26px)
+
   &__item
-    margin-bottom: 30px
+    margin-bottom: 15px
+
+    @media $desktop
+      margin-bottom: 0
 
   &__picture
     position: relative
