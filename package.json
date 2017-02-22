@@ -1,6 +1,6 @@
 {
-  "name": "medical-centre",
-  "version": "0.1.0",
+  "name": "medical",
+  "version": "0.5.0",
   "author": "inwisloklem",
   "private": true,
   "devDependencies": {
