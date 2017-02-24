@@ -32,26 +32,26 @@ html(lang = "ru")
 
               .timer__block
                 .timer__wrapper
-                  .timer__cell 0
-                  .timer__cell 5
+                  .timer__cell.timer__cell--day-1 0
+                  .timer__cell.timer__cell--day-2 0
                 .timer__text Дней
 
               .timer__block
                 .timer__wrapper
-                  .timer__cell 1
-                  .timer__cell 2
+                  .timer__cell.timer__cell--hour-1 0
+                  .timer__cell.timer__cell--hour-2 0
                 .timer__text Часов
 
               .timer__block
                 .timer__wrapper
-                  .timer__cell 1
-                  .timer__cell 5
+                  .timer__cell.timer__cell--min-1 0
+                  .timer__cell.timer__cell--min-2 0
                 .timer__text Минут
 
               .timer__block
                 .timer__wrapper
-                  .timer__cell 4
-                  .timer__cell 5
+                  .timer__cell.timer__cell--sec-1 0
+                  .timer__cell.timer__cell--sec-2 0
                 .timer__text Секунд
 
             h3.page-header__motto
@@ -249,24 +249,26 @@ html(lang = "ru")
 
           .timer__block
             .timer__wrapper
-              .timer__cell 0
-              .timer__cell 5
+              .timer__cell.timer__cell--day-1 0
+              .timer__cell.timer__cell--day-2 0
             .timer__text Дней
 
           .timer__block
             .timer__wrapper
-              .timer__cell 1
-              .timer__cell 2
+              .timer__cell.timer__cell--hour-1 0
+              .timer__cell.timer__cell--hour-2 0
             .timer__text Часов
 
           .timer__block
             .timer__wrapper
-              .timer__cell 1
-              .timer__cell 5
+              .timer__cell.timer__cell--min-1 0
+              .timer__cell.timer__cell--min-2 0
             .timer__text Минут
 
           .timer__block
             .timer__wrapper
-              .timer__cell 4
-              .timer__cell 5
+              .timer__cell.timer__cell--sec-1 0
+              .timer__cell.timer__cell--sec-2 0
             .timer__text Секунд
+
+    script(src = "js/timer.js")
