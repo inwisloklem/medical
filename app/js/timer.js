@@ -27,7 +27,6 @@ function initTimer(second, minute, hour, day, month, year) {
         var minutes = Math.floor(time / 6e4) % 60;
         var seconds = Math.floor(time / 1e3) % 60;
 
-
         var text = null;
 
         for (let i = 0; i < timers.length; i++) {
@@ -54,8 +53,6 @@ function initTimer(second, minute, hour, day, month, year) {
           } else {
             timeText = String(minutes);
           }
-
-          console.log(minutes);
 
           timers[i].querySelector(".timer__cell--min-1").innerHTML = timeText[0];
           timers[i].querySelector(".timer__cell--min-2").innerHTML = timeText[1];
