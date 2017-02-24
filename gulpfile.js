@@ -9,6 +9,7 @@ var htmlmin = require("gulp-htmlmin");
 var imagemin = require("gulp-imagemin");
 var inject = require("gulp-inject");
 var plumber = require("gulp-plumber");
+var prettify = require("gulp-html-prettify");
 var pug = require("gulp-pug");
 var rename = require("gulp-rename");
 var replace = require("gulp-replace");
@@ -69,7 +70,7 @@ gulp.task("dist", function(fn) {
     "dist-markup",
     "dist-images",
     "dist-copy",
-    "dist-replace",
+    // "dist-replace",
     fn
   );
 });
@@ -97,8 +98,8 @@ gulp.task("dist-styles", function() {
     .pipe(autoprefixer({
       browsers: ["last 2 versions"]
     }))
-    .pipe(cssmin())
-    .pipe(rename("style.min.css"))
+    // .pipe(cssmin())
+    // .pipe(rename("style.min.css"))
     .pipe(gulp.dest("dist/css"));
 });
 
@@ -106,7 +107,8 @@ gulp.task("dist-markup", function() {
   return gulp.src("app/pages/*.pug")
     .pipe(plumber())
     .pipe(pug())
-    .pipe(htmlmin())
+    .pipe(prettify({indent_char: " ", indent_size: 2}))
+    // .pipe(htmlmin())
     .pipe(gulp.dest("dist"))
     .pipe(server.stream());
 });
