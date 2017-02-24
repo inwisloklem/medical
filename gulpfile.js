@@ -78,7 +78,7 @@ gulp.task("dist-copy", function() {
   return gulp.src([
     "app/fonts/*.{woff,woff2}",
     "app/img/!icons",
-    "app/js/*/**.js"
+    "app/js/*.js"
   ], {base: "app"})
   .pipe(gulp.dest("dist"));
 });
