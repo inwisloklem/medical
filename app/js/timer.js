@@ -28,6 +28,7 @@ function initTimer(second, minute, hour, day, month, year) {
         var seconds = Math.floor(time / 1e3) % 60;
 
         var text = null;
+        var timeText = null;
 
         for (let i = 0; i < timers.length; i++) {
           if (days < 10) {
