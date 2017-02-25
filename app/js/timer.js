@@ -36,40 +36,28 @@ function initTimer(second, minute, hour, day, month, year) {
         var text = null;
         var timeText = null;
 
-        for (let i = 0; i < timers.length; i++) {
-          if (days < 10) {
-            timeText = "0" + days;
+        function timeNumberToString(num) {
+          if (num < 10) {
+            return "0" + num;
           } else {
-            timeText = String(days);
+            return String(num);
           }
+        }
 
+        for (let i = 0; i < timers.length; i++) {
+          timeText = timeNumberToString(days);
           timers[i].querySelector(".timer__cell--day-1").innerHTML = timeText[0];
           timers[i].querySelector(".timer__cell--day-2").innerHTML = timeText[1];
 
-          if (hours < 10) {
-            timeText = "0" + hours;
-          } else {
-            timeText = String(hours);
-          }
-
+          timeText = timeNumberToString(hours);
           timers[i].querySelector(".timer__cell--hour-1").innerHTML = timeText[0];
           timers[i].querySelector(".timer__cell--hour-2").innerHTML = timeText[1];
 
-          if (minutes < 10) {
-            timeText = "0" + minutes;
-          } else {
-            timeText = String(minutes);
-          }
-
+          timeText = timeNumberToString(minutes);
           timers[i].querySelector(".timer__cell--min-1").innerHTML = timeText[0];
           timers[i].querySelector(".timer__cell--min-2").innerHTML = timeText[1];
 
-          if (seconds < 10) {
-            timeText = "0" + seconds;
-          } else {
-            timeText = String(seconds);
-          }
-
+          timeText = timeNumberToString(seconds);
           timers[i].querySelector(".timer__cell--sec-1").innerHTML = timeText[0];
           timers[i].querySelector(".timer__cell--sec-2").innerHTML = timeText[1];
         }
