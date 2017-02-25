@@ -33,7 +33,6 @@ function initTimer(second, minute, hour, day, month, year) {
           clearInterval(interval);
         }
 
-        var text = null;
         var timeText = null;
 
         function timeNumberToString(num) {
