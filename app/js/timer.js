@@ -27,6 +27,10 @@ function initTimer(second, minute, hour, day, month, year) {
         var minutes = Math.floor(time / 6e4) % 60;
         var seconds = Math.floor(time / 1e3) % 60;
 
+        if (!seconds && !minutes && !days && !hours) {
+          clearInterval(interval);
+        }
+
         var text = null;
         var timeText = null;
 
@@ -66,10 +70,6 @@ function initTimer(second, minute, hour, day, month, year) {
 
           timers[i].querySelector(".timer__cell--sec-1").innerHTML = timeText[0];
           timers[i].querySelector(".timer__cell--sec-2").innerHTML = timeText[1];
-        }
-
-        if (!seconds && !minutes && !days && !hours) {
-          clearInterval(interval);
         }
       }
       now.setSeconds(now.getSeconds() + 1);
